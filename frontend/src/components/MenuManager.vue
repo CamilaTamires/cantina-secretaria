@@ -58,7 +58,7 @@ export default {
         }
 
         // Requisição GET para carregar os menus
-        const response = await axios.get("http://localhost:5000/api/menu", {
+        const response = await axios.get("cantina-secretaria.vercel.app/api/menu", {
           headers: { Authorization: `Bearer ${token}` },
         });
         this.menus = response.data;  // Atualiza a lista de menus com os dados recebidos
@@ -79,7 +79,7 @@ export default {
         }
 
         // Requisição PUT para atualizar os dados do menu no backend
-        const response = await axios.put(`http://localhost:5000/api/menu/${menu._id}`, menu, {
+        const response = await axios.put(`cantina-secretaria.vercel.app/api/menu/${menu._id}`, menu, {
           headers: { Authorization: `Bearer ${token}` },
         });
 

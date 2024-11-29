@@ -50,7 +50,7 @@ export default {
     this.errorMessage = ''; // Resetando a mensagem de erro
     try {
       // Requisição para o backend de autenticação
-      const response = await axios.post('http://localhost:5000/api/auth/login', {
+      const response = await axios.post('cantina-secretaria.vercel.app/api/auth/login', {
         username: this.username,
        password: this.password,
       }, {
