@@ -14,7 +14,7 @@ export const getAuthToken = () => {
       return null;
     }
 
-    return token;  // Retorna o token se ele for válido e não estiver expirado
+    return token;  // Retorna o token se ele for válido
   } catch (error) {
     console.error('Erro ao decodificar o token:', error);
     return null;
